@@ -1,0 +1,26 @@
+{
+  "version": "0.1.2",
+  "name": "Lightsaber",
+  "description": "Funny app with lightsaber sounds from Star Wars.",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "64": "/img/icons/icon64x64.png",
+    "128": "/img/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "MexMod",
+    "url": "http://mexmod.com"
+  },
+  "type": "web",
+  "installs_allowed_from": ["*"],
+  "locales": {
+    "es": {
+      "name": "Sable de Luz",
+      "description": "Divertida app con sonidos del sable de luz de la Guerra de las Galaxias."
+    }
+  },
+  "default_locale": "en",
+  "orientation": "portrait"
+}

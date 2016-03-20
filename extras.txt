@@ -1,0 +1,36 @@
+function showAds(){
+  if(!mostrandoBanners){
+    var ads = document.getElementById("ads");
+    var top = document.createElement("DIV");
+    var bottom = document.createElement("DIV");
+    top.id = "adBannerTop";
+    bottom.id = "adBannerBottom";
+    ads.appendChild(top);
+    ads.appendChild(bottom);
+    
+    CreateBannerAtTop('adBannerTop',30);
+    CreateBannerAtBottom('adBannerBottom',30);
+    RefreshInterstitial();
+    
+    mostrandoBanners = true; 
+    window.setTimeout(function () { hideAds(); }, 25000);
+  }
+}
+
+function hideAds(){
+  if(mostrandoBanners){
+    var ads = document.getElementById("ads");
+    var top = document.getElementById("adBannerTop");
+    var bottom = document.getElementById("adBannerBottom");
+    
+    ads.removeChild(top);
+    ads.removeChild(bottom);
+    
+    mostrandoBanners = false;
+  }
+}
+
+
+Play with your phone as a Master Jedi
+
+Play with your phone as a Master Jedi or a Lord Sith and feel the force in your hands!!!
